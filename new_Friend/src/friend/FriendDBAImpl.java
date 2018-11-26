@@ -1,3 +1,4 @@
+package friend;
 
 
 import java.sql.Connection;

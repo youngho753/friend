@@ -1,3 +1,4 @@
+package friend;
 
 
 import java.util.ArrayList;
@@ -5,16 +6,16 @@ import java.util.ArrayList;
 import javax.swing.JTextField;
 
 public interface FriendDBA {
-	//ì¶”ê?
+	//ì¶”ï¿½?
 	public void friendInsert(Friend f);
 	//ë³´ê¸°
 	public ArrayList<Friend> friendView();
-	//ê²??ƒ‰
+	//ï¿½??ï¿½ï¿½
 	public ArrayList<Friend> friendSearch(int type,String str);
-	//?ˆ˜? •
+	//?ï¿½ï¿½?ï¿½ï¿½
 	public void friendUpdate(int num,JTextField tf1,JTextField tf2,JTextField tf3,JTextField tf4);
-	//?‚­? œ
+	//?ï¿½ï¿½?ï¿½ï¿½
 	public void friendDelete(int num);
-	//?ƒ?„¸ë³´ê¸°
+	//?ï¿½ï¿½?ï¿½ï¿½ë³´ê¸°
 	public Friend friendDetail(int num);
 }
