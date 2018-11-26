@@ -30,7 +30,7 @@ public class FriendDBAImpl implements FriendDBA{
 			e.printStackTrace();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace();;
 		}
 	}
 	//친구추�?
