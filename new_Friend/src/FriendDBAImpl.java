@@ -15,15 +15,15 @@ public class FriendDBAImpl implements FriendDBA{
 	PreparedStatement pstmt;
 	Statement stmt;
 	ResultSet rs;
-	//?””ë¹„ì…‹?Œ…
-	public FriendDBAImpl() {
+	//?ï¿½ï¿½ë¹„ì…‹?ï¿½ï¿½
+	public FriendDBAImpl() { 
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");//?“œ?¼?´ë²?
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";//?˜¤?¼?´ë²„ì „@?•„?´?”¼:?¬?Š¸ë²ˆí˜¸:sid
-			String user = "scott";//?•„?´?””
-			String pw = "TIGER";//ë¹„ë?ë²ˆí˜¸
+			Class.forName("oracle.jdbc.driver.OracleDriver");//?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½?
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";//?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ë²„ì „@?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½:?ï¿½ï¿½?ï¿½ï¿½ë²ˆí˜¸:sid
+			String user = "scott";//?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½
+			String pw = "TIGER";//ë¹„ï¿½?ë²ˆí˜¸
 
-			conn = DriverManager.getConnection(url, user , pw);//ì»¤ë„¥?…˜
+			conn = DriverManager.getConnection(url, user , pw);//ì»¤ë„¥?ï¿½ï¿½
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -33,7 +33,7 @@ public class FriendDBAImpl implements FriendDBA{
 			e.printStackTrace();
 		}
 	}
-	//ì¹œêµ¬ì¶”ê?
+	//ì¹œêµ¬ì¶”ï¿½?
 	@Override
 	public void friendInsert(Friend f) {
 		String sql = "INSERT into friend values(FRIEND_SEQ.nextval, ?, ?, ?, ?)";
@@ -50,7 +50,7 @@ public class FriendDBAImpl implements FriendDBA{
 		}
 				
 	}
-	//ì¹œêµ¬? „ì²´ë³´ê¸?
+	//ì¹œêµ¬?ï¿½ï¿½ì²´ë³´ï¿½?
 	@Override
 	public ArrayList<Friend> friendView() {
 		String sql = "select * from friend";
@@ -74,7 +74,7 @@ public class FriendDBAImpl implements FriendDBA{
 		}
 		return arr;
 	}
-	//ì¹œêµ¬ê²??ƒ‰
+	//ì¹œêµ¬ï¿½??ï¿½ï¿½
 	@Override
 	public ArrayList<Friend> friendSearch(int type,String str) {
 		String sql=null;
